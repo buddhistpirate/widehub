@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "widehub",
+	"description": "Make code wider",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["https://github.com/*"],
+			"exclude_matches": ["https://github.com/*blob*"],
+			"js": ["jquery-2.1.1.js", "widehub_page.js"]
+		},
+		{
+			"matches": ["https://github.com/*blob*"],
+			"js": ["jquery-2.1.1.js", "widehub_blob.js"]
+		}
+	]	
+}
