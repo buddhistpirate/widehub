@@ -12,6 +12,14 @@
 		{
 			"matches": ["https://github.com/*blob*"],
 			"js": ["jquery-2.1.1.js", "widehub_blob.js"]
+		},
+		{
+			"matches": ["https://github.com/*commit*/*diff=split"],
+			"js": ["jquery-2.1.1.js", "widehub_commit_split_diff.js"]
+		},
+		{
+			"matches": ["https://github.com/*commit*/*diff=unified"],
+			"js": ["jquery-2.1.1.js", "widehub_commit_unified_diff.js"]
 		}
 	]	
 }
